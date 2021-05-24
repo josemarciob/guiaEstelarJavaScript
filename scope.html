@@ -1,0 +1,36 @@
+<script>
+//var é global e, também local
+//hoisting
+// var x
+console.log('> existe x antes do bloco?', x)
+
+{
+    var x = 0
+    // x = 0
+}
+
+console.log('> existe x depois do bloco?', x)
+
+
+
+/* */
+  //const e let são locais e só funcionam no escopo onde foi criada
+
+{
+    let y = 0
+    console.log('existe y antes do bloco? ', y)
+    // só depois que eu declarei
+
+}
+console.log('> existe y depois do bloco? ', y)
+
+
+//joão não é igual ao outro joão, estão em escopos diferentes
+const y = 1;
+{
+    const y = 0
+    console.log('existe y antes do bloco? ', y)
+}
+console.log('> existe y depois do bloco? ', y)
+
+</script>
